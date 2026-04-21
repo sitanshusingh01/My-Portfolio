@@ -411,6 +411,62 @@ h2 {
   font-weight: 900;
 }
 
+.resume-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr);
+  gap: 18px;
+}
+
+.resume-panel {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--surface);
+  box-shadow: 0 14px 38px rgba(17, 24, 23, 0.08);
+}
+
+.resume-panel h3 {
+  margin: 28px 0 10px;
+  font-size: 1.2rem;
+}
+
+.resume-panel h3:first-child {
+  margin-top: 0;
+}
+
+.resume-panel p,
+.resume-list {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.resume-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.resume-list strong {
+  color: var(--text);
+}
+
+.resume-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.resume-pdf iframe {
+  display: block;
+  width: 100%;
+  min-height: 620px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface-solid);
+}
+
 .contact-section {
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(320px, 1fr);
@@ -524,6 +580,10 @@ h2 {
     grid-template-columns: 1fr;
   }
 
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
+
   .project-card {
     min-height: 280px;
   }
@@ -596,6 +656,14 @@ h2 {
 
   .contact-form {
     padding: 22px;
+  }
+
+  .resume-panel {
+    padding: 22px;
+  }
+
+  .resume-pdf iframe {
+    min-height: 460px;
   }
 }
 
