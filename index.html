@@ -1,54 +1,208 @@
-<!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<meta name="google-site-verification" content="q4AQRkYs6eJD0i0G0CkMRi7IGWnmJhbDSAenK6yLBpw" />
-		<title>Sitanshu Singh</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	</head>
-	<body class="loading">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Sitanshu Singh, an IIT Patna Computer Science and Data Analytics undergraduate focused on analytics, operations, dashboards, and KPI-driven decision-making."
+    />
+    <title>Sitanshu Singh | Portfolio</title>
+    <link rel="preload" as="image" href="assets/portfolio-workspace.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-mark">SS</span>
+        <span>Sitanshu Singh</span>
+      </a>
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Sitanshu Singh</h1>
-						<p>Passionate Programmer &nbsp;&bull;&nbsp; Nature Lover &nbsp;&bull;&nbsp; Ambitious &nbsp;&bull;&nbsp; Artist</p>
-						<nav>
-							<ul>
-								<li><a href="https://www.linkedin.com/in/sitanshusingh01/" class="icon fa-linkedin"><span class="label">linkedin</span></a></li>
-								<li><a href="https://twitter.com/" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://github.com/sitanshusingh01" class="icon fa-github"><span class="label">Github</span></a></li>
-								<li><a href="https://www.instagram.com/thakursitanshu_01" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="https://www.facebook.com/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="mailto:sitanshu_2312res644@iitp.ac.in" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-							</ul>
-						</nav>
-					</header>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">&copy; Sitanshu Singh</span>
-					</footer>
+      <nav class="site-nav" aria-label="Main navigation" data-nav>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-			</div>
-		</div>
-		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-		<script>
-			window.onload = function() { document.body.className = ''; }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Portfolio</p>
+          <h1 id="hero-title">Analytics and operations thinker focused on better decisions.</h1>
+          <p>
+            Hi, I am Sitanshu Singh, a Computer Science and Data Analytics undergraduate at IIT Patna. I work across analytics, operations, KPI tracking, dashboards, and business insight generation.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View Projects</a>
+            <a class="button button-secondary" href="#resume">View Resume</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <img src="assets/portfolio-workspace.png" alt="" />
+          <div class="metric-card metric-card-top">
+            <span>Focus</span>
+            <strong>Data Analytics</strong>
+          </div>
+          <div class="metric-card metric-card-bottom">
+            <span>Tools</span>
+            <strong>Python · SQL · Excel · Power BI</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected Work</p>
+          <h2 id="projects-title">Projects</h2>
+          <p>Selected work from my resume across dashboards, KPI tracking, operations reporting, and data-driven insight generation.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <span class="project-number">01</span>
+            <h3>E-commerce Sales and Revenue Analytics Dashboard</h3>
+            <p>
+              Analyzed transaction-level data to identify demand patterns and operational insights, then built dashboards to track KPIs and support cost and efficiency optimization.
+            </p>
+            <ul>
+              <li>Python</li>
+              <li>Power BI</li>
+              <li>Excel</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-number">02</span>
+            <h3>Research Data Analysis Workflow</h3>
+            <p>
+              Cleaned, analyzed, and interpreted structured datasets during my IIT Bhilai research internship, documenting findings and methods for reproducibility.
+            </p>
+            <ul>
+              <li>Python</li>
+              <li>Excel</li>
+              <li>EDA</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-number">03</span>
+            <h3>Operations KPI Reporting</h3>
+            <p>
+              Built structured operational reports, tracked SLA adherence, reviewed execution gaps, and supported management planning with data-backed updates.
+            </p>
+            <ul>
+              <li>Excel</li>
+              <li>KPI Tracking</li>
+              <li>SLA Monitoring</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section resume-section" id="resume" aria-labelledby="resume-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Resume</p>
+          <h2 id="resume-title">Resume and profile</h2>
+          <p>
+            A complete snapshot of my education, skills, internships, leadership, certifications, and resume PDF.
+          </p>
+        </div>
+
+        <div class="resume-grid">
+          <div class="resume-panel reveal">
+            <h3>Professional Summary</h3>
+            <p>
+              Computer Science and Data Analytics undergraduate at IIT Patna with exposure to supply chain analytics, operations analysis, and KPI-driven decision-making. Experienced in analyzing transactional data, building dashboards, and collaborating with cross-functional teams to deliver actionable business insights.
+            </p>
+
+            <h3>Education</h3>
+            <p>
+              Indian Institute of Technology (IIT) Patna<br />
+              BS - Computer Science and Data Analytics, 2023 - 2027<br />
+              CPI: 9.06 / 10
+            </p>
+
+            <h3>Skills</h3>
+            <ul class="resume-list">
+              <li><strong>Management and Operations:</strong> Supply Chain Operations, Process Optimization, KPI Tracking, SLA Monitoring</li>
+              <li><strong>Analytics Tools:</strong> Microsoft Excel (Advanced), SQL, Power BI</li>
+              <li><strong>Programming:</strong> Python (Pandas, NumPy), Java</li>
+              <li><strong>Business Skills:</strong> Data Interpretation, Hypothesis Testing, First-Principles Thinking</li>
+              <li><strong>Tools:</strong> Git, GitHub, VS Code</li>
+            </ul>
+
+            <h3>Experience</h3>
+            <ul class="resume-list">
+              <li><strong>Data Analytics Research Intern - IIT Bhilai:</strong> Cleaned, analyzed, and interpreted structured datasets using Python and Excel.</li>
+              <li><strong>Operations Manager - INGLU:</strong> Analyzed operational KPIs, timelines, and SLA adherence to support data-driven execution.</li>
+              <li><strong>Management Intern - Grey-Volk Security and Corporate Training:</strong> Developed Excel-based analytical reports and dashboards for management review.</li>
+            </ul>
+
+            <h3>Leadership, Achievements, and Certifications</h3>
+            <ul class="resume-list">
+              <li>Selected for McKinsey Solve Assessment.</li>
+              <li>NSS Coordinator - operations and logistics lead.</li>
+              <li>Media and PR Coordinator - TEDx IIT Patna.</li>
+              <li>IBM Data Analytics, Deloitte Australia Data Analytics, Tata GenAI Powered Data Analytics.</li>
+            </ul>
+          </div>
+
+          <div class="resume-panel resume-pdf reveal">
+            <h3>Resume PDF</h3>
+            <p>View or download the full resume PDF directly from the website.</p>
+            <div class="resume-actions">
+              <a class="button button-primary" href="assets/Sitanshu_Singh_IITP.pdf" target="_blank" rel="noreferrer">Open PDF</a>
+              <a class="button button-secondary" href="assets/Sitanshu_Singh_IITP.pdf" download>Download</a>
+            </div>
+            <iframe title="Sitanshu Singh Resume PDF" src="assets/Sitanshu_Singh_IITP.pdf"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let us work together.</h2>
+          <p>
+            I am open to analytics, operations, dashboarding, and data-driven business roles. You can reach me at sitanshu_2312res644@iitp.ac.in or through LinkedIn at linkedin.com/in/sitanshusingh01.
+          </p>
+        </div>
+
+        <form class="contact-form reveal" data-contact-form>
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+          </label>
+
+          <button class="button button-primary" type="submit">Send Message</button>
+          <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span data-year></span> Sitanshu Singh. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
