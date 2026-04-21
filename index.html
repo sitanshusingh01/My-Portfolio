@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Modern portfolio website for Sitanshu Singh, featuring an intro, selected projects, and a contact form."
+    />
+    <title>Sitanshu Singh | Portfolio</title>
+    <link rel="preload" as="image" href="assets/portfolio-workspace.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-mark">SS</span>
+        <span>Sitanshu Singh</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Main navigation" data-nav>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Portfolio</p>
+          <h1 id="hero-title">Data analyst crafting clear, decision-ready insights.</h1>
+          <p>
+            Hi, I’m Sitanshu Singh. I build clean dashboards, analyze real-world datasets, and turn complex information into simple stories people can act on.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View Projects</a>
+            <a class="button button-secondary" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <img src="assets/portfolio-workspace.png" alt="" />
+          <div class="metric-card metric-card-top">
+            <span>Focus</span>
+            <strong>Analytics</strong>
+          </div>
+          <div class="metric-card metric-card-bottom">
+            <span>Tools</span>
+            <strong>Python · SQL · Power BI</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected Work</p>
+          <h2 id="projects-title">Projects</h2>
+          <p>Featured analytics projects focused on dashboards, KPIs, data cleaning, and insight generation.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <span class="project-number">01</span>
+            <h3>E-commerce Sales Dashboard</h3>
+            <p>
+              Cleaned sales data, studied revenue trends, and designed an interactive dashboard for business decision-making.
+            </p>
+            <ul>
+              <li>Power BI</li>
+              <li>Excel</li>
+              <li>KPIs</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-number">02</span>
+            <h3>SQL Business Insights</h3>
+            <p>
+              Used SQL to analyze structured datasets, track retention patterns, and surface performance metrics.
+            </p>
+            <ul>
+              <li>SQL</li>
+              <li>MySQL</li>
+              <li>Dashboards</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-number">03</span>
+            <h3>Sentiment Analysis Study</h3>
+            <p>
+              Collected news data, cleaned unstructured text, performed sentiment analysis, and visualized trends.
+            </p>
+            <ul>
+              <li>Python</li>
+              <li>Pandas</li>
+              <li>Matplotlib</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let’s work together.</h2>
+          <p>
+            Have an internship, analytics project, or collaboration in mind? Send a message and I’ll get back to you.
+          </p>
+        </div>
+
+        <form class="contact-form reveal" data-contact-form>
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+          </label>
+
+          <button class="button button-primary" type="submit">Send Message</button>
+          <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span data-year></span> Sitanshu Singh. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
