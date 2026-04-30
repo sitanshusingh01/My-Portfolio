@@ -5,202 +5,530 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio of Sitanshu Singh, an IIT Patna Computer Science and Data Analytics undergraduate focused on analytics, operations, dashboards, and KPI-driven decision-making."
+      content="Sitanshu Singh is an IIT Patna data analytics undergraduate building dashboards, extracting business insights, and turning data into decisions."
     />
-    <title>Sitanshu Singh | Portfolio</title>
+    <title>Sitanshu Singh | Data Analyst Portfolio</title>
     <link rel="preload" as="image" href="assets/portfolio-workspace.png" />
+    <script>
+      try {
+        const savedTheme = localStorage.getItem("portfolio-theme");
+        const preferredDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme = savedTheme || (preferredDark ? "dark" : "light");
+      } catch {
+        document.documentElement.dataset.theme = "light";
+      }
+    </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Main navigation -->
     <header class="site-header" data-header>
-      <a class="brand" href="#home" aria-label="Go to home">
+      <a class="brand" href="#home" aria-label="Sitanshu Singh home">
         <span class="brand-mark">SS</span>
-        <span>Sitanshu Singh</span>
+        <span class="brand-text">
+          <strong>Sitanshu Singh</strong>
+          <small>Data Analyst Portfolio</small>
+        </span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav class="site-nav" aria-label="Main navigation" data-nav>
+      <nav class="site-nav" aria-label="Primary navigation" data-nav>
         <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
+        <a href="#credentials">Credentials</a>
         <a href="#contact">Contact</a>
       </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" title="Toggle color theme" aria-label="Toggle color theme" data-theme-toggle>
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" />
+            <circle cx="12" cy="12" r="4.2" />
+          </svg>
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 15.1A8.5 8.5 0 0 1 8.9 4 7.8 7.8 0 1 0 20 15.1Z" />
+          </svg>
+        </button>
+
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
 
     <main>
-      <section class="hero" id="home" aria-labelledby="hero-title">
+      <!-- Hero -->
+      <section class="hero section-shell" id="home" aria-labelledby="hero-title">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Portfolio</p>
-          <h1 id="hero-title">Analytics and operations thinker focused on better decisions.</h1>
-          <p>
-            Hi, I am Sitanshu Singh, a Computer Science and Data Analytics undergraduate at IIT Patna. I work across analytics, operations, KPI tracking, dashboards, and business insight generation.
+          <p class="eyebrow">Turning Data into Decisions</p>
+          <h1 id="hero-title">Sitanshu Singh</h1>
+          <p class="hero-role">Aspiring Data Analyst</p>
+          <p class="hero-summary">
+            IIT Patna undergraduate with a strong grounding in Python, SQL, Excel, and Power BI, focused on extracting insights from data, building recruiter-ready dashboards, and supporting business decisions through structured analysis.
           </p>
+
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">View Projects</a>
-            <a class="button button-secondary" href="#resume">View Resume</a>
+            <a class="button button-primary" href="#projects">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14m-6-6 6 6-6 6" />
+              </svg>
+              View Projects
+            </a>
+            <a class="button button-secondary" href="assets/Sitanshu_Singh_IITP.pdf" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14" />
+              </svg>
+              Download Resume
+            </a>
           </div>
+
+          <ul class="hero-metrics" aria-label="Key metrics">
+            <li>
+              <strong>9.06</strong>
+              <span>CPI at IIT Patna</span>
+            </li>
+            <li>
+              <strong>3</strong>
+              <span>Flagship analytics projects</span>
+            </li>
+            <li>
+              <strong>2026</strong>
+              <span>Research internship at IIT Bhilai</span>
+            </li>
+          </ul>
         </div>
 
-        <div class="hero-visual reveal" aria-hidden="true">
-          <img src="assets/portfolio-workspace.png" alt="" />
-          <div class="metric-card metric-card-top">
-            <span>Focus</span>
-            <strong>Data Analytics</strong>
+        <div class="hero-stage reveal" aria-hidden="true">
+          <div class="stage-card stage-card-large">
+            <div class="stage-card-header">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="chart-grid">
+              <div class="bar-set">
+                <i style="height: 44%"></i>
+                <i style="height: 61%"></i>
+                <i style="height: 58%"></i>
+                <i style="height: 76%"></i>
+                <i style="height: 88%"></i>
+              </div>
+              <div class="line-set">
+                <svg viewBox="0 0 260 130" preserveAspectRatio="none">
+                  <polyline points="16,92 68,56 122,66 176,34 236,48" />
+                  <circle cx="16" cy="92" r="4" />
+                  <circle cx="68" cy="56" r="4" />
+                  <circle cx="122" cy="66" r="4" />
+                  <circle cx="176" cy="34" r="4" />
+                  <circle cx="236" cy="48" r="4" />
+                </svg>
+              </div>
+            </div>
+            <div class="stage-card-footer">
+              <span>KPI Tracking</span>
+              <span>EDA</span>
+              <span>Insight Generation</span>
+            </div>
           </div>
-          <div class="metric-card metric-card-bottom">
-            <span>Tools</span>
-            <strong>Python · SQL · Excel · Power BI</strong>
+
+          <div class="stage-card stage-card-photo">
+            <img src="assets/portfolio-workspace.png" alt="" />
+          </div>
+
+          <div class="stage-float stage-float-top">
+            <span>Tool Stack</span>
+            <strong>Python, SQL, Power BI</strong>
+          </div>
+
+          <div class="stage-float stage-float-bottom">
+            <span>Current Goal</span>
+            <strong>Internships and placements in analytics</strong>
           </div>
         </div>
       </section>
 
-      <section class="section" id="projects" aria-labelledby="projects-title">
+      <!-- About -->
+      <section class="section-shell" id="about" aria-labelledby="about-title">
         <div class="section-heading reveal">
-          <p class="eyebrow">Selected Work</p>
-          <h2 id="projects-title">Projects</h2>
-          <p>Selected work from my resume across dashboards, KPI tracking, operations reporting, and data-driven insight generation.</p>
+          <p class="eyebrow">About Me</p>
+          <h2 id="about-title">A data-focused builder with a business lens.</h2>
+          <p>
+            I study Computer Science and Data Analytics at IIT Patna and enjoy the full path from raw dataset to usable decision support. My work is strongest where analysis, clarity, and execution meet.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card reveal">
+            <h3>Professional Summary</h3>
+            <p>
+              Aspiring Data Analyst skilled in Python, SQL, Excel, and Power BI with experience in data preprocessing, exploratory data analysis, statistical techniques, and machine learning for insight generation.
+            </p>
+          </article>
+
+          <article class="about-card reveal">
+            <h3>Education</h3>
+            <p>
+              <strong>BS in Computer Science and Data Analytics</strong><br />
+              IIT Patna<br />
+              2023 - 2027<br />
+              CPI: 9.06
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- What I Bring -->
+      <section class="section-shell what-i-bring" aria-labelledby="bring-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">What I Bring</p>
+          <h2 id="bring-title">The combination of analysis, structure, and business awareness.</h2>
+        </div>
+
+        <div class="bring-grid">
+          <article class="bring-card reveal">
+            <h3>Business-first analysis</h3>
+            <p>I focus on KPIs, trends, revenue logic, and decisions that matter beyond the dataset itself.</p>
+          </article>
+          <article class="bring-card reveal">
+            <h3>Structured problem solving</h3>
+            <p>I use EDA, preprocessing, SQL logic, and statistical thinking to make messy information reliable.</p>
+          </article>
+          <article class="bring-card reveal">
+            <h3>Clear communication</h3>
+            <p>I translate outputs into dashboards, charts, and concise explanations that recruiters and teams can trust quickly.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section-shell" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Skills</p>
+          <h2 id="skills-title">A toolkit shaped for analyst work.</h2>
+          <p>Core strengths across programming, analytics, visualization, machine learning basics, and practical tooling.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-heading">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 7 4 12l4 5M16 7l4 5-4 5M13 4l-2 16" />
+              </svg>
+              <div>
+                <h3>Programming</h3>
+                <p>Python, SQL, Java</p>
+              </div>
+            </div>
+            <div class="progress-track" role="progressbar" aria-label="Programming proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="88">
+              <span style="width: 88%"></span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-heading">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 19h16M7 16V9M12 16V5M17 16v-7" />
+              </svg>
+              <div>
+                <h3>Data Analysis</h3>
+                <p>EDA, KPI Tracking, Statistical Analysis</p>
+              </div>
+            </div>
+            <div class="progress-track" role="progressbar" aria-label="Data analysis proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
+              <span style="width: 90%"></span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-heading">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 18h16M6 16V8M12 16V5M18 16v-6" />
+              </svg>
+              <div>
+                <h3>Visualization</h3>
+                <p>Power BI, Excel, Matplotlib</p>
+              </div>
+            </div>
+            <div class="progress-track" role="progressbar" aria-label="Visualization proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="87">
+              <span style="width: 87%"></span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-heading">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 18c2-3 5-5 8-5s6 2 8 5M7.5 11.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Zm9 0a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+              </svg>
+              <div>
+                <h3>Machine Learning</h3>
+                <p>Basics, Data Preprocessing, Insight Generation</p>
+              </div>
+            </div>
+            <div class="progress-track" role="progressbar" aria-label="Machine learning proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="72">
+              <span style="width: 72%"></span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-heading">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 19a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h4l2 2h6a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6Z" />
+              </svg>
+              <div>
+                <h3>Tools</h3>
+                <p>Pandas, NumPy, MySQL, Git, GitHub, VS Code</p>
+              </div>
+            </div>
+            <div class="progress-track" role="progressbar" aria-label="Tools proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="84">
+              <span style="width: 84%"></span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section-shell" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Experience</p>
+          <h2 id="experience-title">Hands-on work translating data into practical outcomes.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-date">Jan 2026 - Apr 2026</span>
+            <div class="timeline-content">
+              <h3>Data Analytics Research Intern</h3>
+              <p class="timeline-location">IIT Bhilai</p>
+              <ul>
+                <li>Cleaned and preprocessed structured datasets using Python.</li>
+                <li>Performed exploratory data analysis to identify patterns and anomalies.</li>
+                <li>Applied machine learning techniques to generate actionable insights.</li>
+                <li>Built visualizations to communicate results effectively.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-date">2023 - 2027</span>
+            <div class="timeline-content">
+              <h3>BS in Computer Science and Data Analytics</h3>
+              <p class="timeline-location">IIT Patna</p>
+              <ul>
+                <li>CPI: 9.06 with a strong academic foundation in data and systems thinking.</li>
+                <li>Built practical experience with dashboards, SQL analysis, and insight communication.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section-shell" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">Work that shows analysis, judgment, and presentation.</h2>
         </div>
 
         <div class="project-grid">
           <article class="project-card reveal">
-            <span class="project-number">01</span>
-            <h3>E-commerce Sales and Revenue Analytics Dashboard</h3>
-            <p>
-              Analyzed transaction-level data to identify demand patterns and operational insights, then built dashboards to track KPIs and support cost and efficiency optimization.
-            </p>
-            <ul>
-              <li>Python</li>
-              <li>Power BI</li>
-              <li>Excel</li>
-            </ul>
-          </article>
-
-          <article class="project-card reveal">
-            <span class="project-number">02</span>
-            <h3>Research Data Analysis Workflow</h3>
-            <p>
-              Cleaned, analyzed, and interpreted structured datasets during my IIT Bhilai research internship, documenting findings and methods for reproducibility.
-            </p>
-            <ul>
-              <li>Python</li>
-              <li>Excel</li>
-              <li>EDA</li>
-            </ul>
-          </article>
-
-          <article class="project-card reveal">
-            <span class="project-number">03</span>
-            <h3>Operations KPI Reporting</h3>
-            <p>
-              Built structured operational reports, tracked SLA adherence, reviewed execution gaps, and supported management planning with data-backed updates.
-            </p>
-            <ul>
-              <li>Excel</li>
-              <li>KPI Tracking</li>
-              <li>SLA Monitoring</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="section resume-section" id="resume" aria-labelledby="resume-title">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Resume</p>
-          <h2 id="resume-title">Resume and profile</h2>
-          <p>
-            A complete snapshot of my education, skills, internships, leadership, certifications, and resume PDF.
-          </p>
-        </div>
-
-        <div class="resume-grid">
-          <div class="resume-panel reveal">
-            <h3>Professional Summary</h3>
-            <p>
-              Computer Science and Data Analytics undergraduate at IIT Patna with exposure to supply chain analytics, operations analysis, and KPI-driven decision-making. Experienced in analyzing transactional data, building dashboards, and collaborating with cross-functional teams to deliver actionable business insights.
-            </p>
-
-            <h3>Education</h3>
-            <p>
-              Indian Institute of Technology (IIT) Patna<br />
-              BS - Computer Science and Data Analytics, 2023 - 2027<br />
-              CPI: 9.06 / 10
-            </p>
-
-            <h3>Skills</h3>
-            <ul class="resume-list">
-              <li><strong>Management and Operations:</strong> Supply Chain Operations, Process Optimization, KPI Tracking, SLA Monitoring</li>
-              <li><strong>Analytics Tools:</strong> Microsoft Excel (Advanced), SQL, Power BI</li>
-              <li><strong>Programming:</strong> Python (Pandas, NumPy), Java</li>
-              <li><strong>Business Skills:</strong> Data Interpretation, Hypothesis Testing, First-Principles Thinking</li>
-              <li><strong>Tools:</strong> Git, GitHub, VS Code</li>
-            </ul>
-
-            <h3>Experience</h3>
-            <ul class="resume-list">
-              <li><strong>Data Analytics Research Intern - IIT Bhilai:</strong> Cleaned, analyzed, and interpreted structured datasets using Python and Excel.</li>
-              <li><strong>Operations Manager - INGLU:</strong> Analyzed operational KPIs, timelines, and SLA adherence to support data-driven execution.</li>
-              <li><strong>Management Intern - Grey-Volk Security and Corporate Training:</strong> Developed Excel-based analytical reports and dashboards for management review.</li>
-            </ul>
-
-            <h3>Leadership, Achievements, and Certifications</h3>
-            <ul class="resume-list">
-              <li>Selected for McKinsey Solve Assessment.</li>
-              <li>NSS Coordinator - operations and logistics lead.</li>
-              <li>Media and PR Coordinator - TEDx IIT Patna.</li>
-              <li>IBM Data Analytics, Deloitte Australia Data Analytics, Tata GenAI Powered Data Analytics.</li>
-            </ul>
-          </div>
-
-          <div class="resume-panel resume-pdf reveal">
-            <h3>Resume PDF</h3>
-            <p>View or download the full resume PDF directly from the website.</p>
-            <div class="resume-actions">
-              <a class="button button-primary" href="assets/Sitanshu_Singh_IITP.pdf" target="_blank" rel="noreferrer">Open PDF</a>
-              <a class="button button-secondary" href="assets/Sitanshu_Singh_IITP.pdf" download>Download</a>
+            <div class="project-topline">
+              <span class="project-index">01</span>
+              <span class="project-label">Dashboard Analytics</span>
             </div>
-            <iframe title="Sitanshu Singh Resume PDF" src="assets/Sitanshu_Singh_IITP.pdf"></iframe>
-          </div>
+            <h3>E-commerce Sales Dashboard</h3>
+            <p>
+              Processed large datasets, removed duplicates and missing values, and built KPI-rich Power BI dashboards to understand growth, top products, seasonality, and customer behavior.
+            </p>
+            <ul class="project-outcomes">
+              <li>Surfaced revenue trends and seasonal demand shifts.</li>
+              <li>Highlighted pricing, inventory, and targeting opportunities.</li>
+              <li>Tracked KPIs such as sales growth and top-performing products.</li>
+            </ul>
+            <div class="chip-row">
+              <span>Python</span>
+              <span>Power BI</span>
+              <span>Excel</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-index">02</span>
+              <span class="project-label">SQL Reporting</span>
+            </div>
+            <h3>SQL Business Insights Project</h3>
+            <p>
+              Used joins, aggregations, and subqueries to transform structured business data into retention, revenue, and performance insights that supported decision-making.
+            </p>
+            <ul class="project-outcomes">
+              <li>Created KPIs such as retention rate and revenue trend tracking.</li>
+              <li>Built structured dashboards for business review.</li>
+              <li>Turned raw relational data into decision-ready reporting.</li>
+            </ul>
+            <div class="chip-row">
+              <span>SQL</span>
+              <span>MySQL</span>
+              <span>KPI Tracking</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-index">03</span>
+              <span class="project-label">Text Analytics</span>
+            </div>
+            <h3>Web Scraping and Sentiment Analysis</h3>
+            <p>
+              Collected real-time data through web scraping, structured noisy text inputs, and used NLP-based sentiment analysis to reveal patterns that were then visualized clearly.
+            </p>
+            <ul class="project-outcomes">
+              <li>Built a pipeline from raw collection to structured analysis.</li>
+              <li>Applied sentiment techniques to identify shifts in opinion.</li>
+              <li>Communicated findings through chart-based storytelling.</li>
+            </ul>
+            <div class="chip-row">
+              <span>Python</span>
+              <span>NLP</span>
+              <span>Visualization</span>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <!-- Credentials -->
+      <section class="section-shell" id="credentials" aria-labelledby="credentials-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Credentials</p>
+          <h2 id="credentials-title">Certifications, achievements, and resume access.</h2>
+        </div>
+
+        <div class="credentials-grid">
+          <article class="credential-panel reveal">
+            <h3>Certifications</h3>
+            <ul class="stack-list">
+              <li>IBM Data Analytics</li>
+              <li>Deloitte Australia Data Analytics</li>
+              <li>Tata GenAI Data Analytics</li>
+            </ul>
+          </article>
+
+          <article class="credential-panel reveal">
+            <h3>Achievements</h3>
+            <ul class="stack-list">
+              <li>Selected for McKinsey Solve Assessment</li>
+              <li>Media and PR Coordinator, TEDx IIT Patna</li>
+              <li>NSS Coordinator</li>
+            </ul>
+          </article>
+
+          <article class="credential-panel credential-panel-wide reveal">
+            <div class="credential-topline">
+              <div>
+                <h3>Resume</h3>
+                <p>ATS-friendly PDF version for recruiters and hiring teams.</p>
+              </div>
+              <div class="resume-actions">
+                <a class="button button-primary" href="assets/Sitanshu_Singh_IITP.pdf" download>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14" />
+                  </svg>
+                  Download Resume
+                </a>
+                <a class="button button-secondary" href="assets/Sitanshu_Singh_IITP.pdf" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M14 5h5v5M10 14 19 5M19 14v5H5V5h5" />
+                  </svg>
+                  Open PDF
+                </a>
+              </div>
+            </div>
+
+            <iframe class="resume-frame" title="Sitanshu Singh Resume" src="assets/Sitanshu_Singh_IITP.pdf"></iframe>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section-shell contact-section" id="contact" aria-labelledby="contact-title">
         <div class="contact-copy reveal">
           <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">Let us work together.</h2>
+          <h2 id="contact-title">Ready for analyst internships, projects, and placement opportunities.</h2>
           <p>
-            I am open to analytics, operations, dashboarding, and data-driven business roles. You can reach me at sitanshu_2312res644@iitp.ac.in or through LinkedIn at linkedin.com/in/sitanshusingh01.
+            If you are hiring for analytics, reporting, dashboarding, or data-heavy business roles, I would love to connect.
           </p>
+
+          <ul class="contact-list">
+            <li>
+              <strong>Email</strong>
+              <a href="mailto:sitanshu_2312res644@iitp.ac.in">sitanshu_2312res644@iitp.ac.in</a>
+            </li>
+            <li>
+              <strong>Phone</strong>
+              <a href="tel:+918115926935">+91 8115926935</a>
+            </li>
+            <li>
+              <strong>Education</strong>
+              <span>BS in Computer Science and Data Analytics, IIT Patna</span>
+            </li>
+          </ul>
+
+          <div class="social-row">
+            <a class="social-link" href="https://github.com/sitanshusingh01" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-2c-2.9.7-3.5-1.2-3.5-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 0 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1 .6-1.3-2.3-.3-4.7-1.1-4.7-5 0-1.1.4-2 1.1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .9-.3 2.8 1a9.9 9.9 0 0 1 5.2 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.7.7 1.1 1.6 1.1 2.7 0 3.9-2.4 4.7-4.8 5 .4.3.7.9.7 1.8v2.6c0 .3.2.6.7.5A10 10 0 0 0 12 2Z" />
+              </svg>
+              GitHub
+            </a>
+            <a class="social-link" href="https://linkedin.com/in/sitanshusingh01" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6.8 8.8V20H3.6V8.8h3.2ZM5.2 4a1.9 1.9 0 1 1 0 3.8 1.9 1.9 0 0 1 0-3.8Zm6.2 4.8v1.5c.7-1.1 1.9-1.8 3.4-1.8 2.6 0 4.4 1.7 4.4 5.1V20H16v-5.9c0-1.5-.5-2.5-1.9-2.5-1 0-1.7.6-2 1.4V20H8.9V8.8h2.5Z" />
+              </svg>
+              LinkedIn
+            </a>
+          </div>
         </div>
 
+        <!-- Front-end contact form that prepares an email draft -->
         <form class="contact-form reveal" data-contact-form>
-          <label>
-            <span>Name</span>
-            <input type="text" name="name" placeholder="Your name" required />
-          </label>
+          <div class="field-grid">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+          </div>
 
           <label>
-            <span>Email</span>
-            <input type="email" name="email" placeholder="you@example.com" required />
+            <span>Subject</span>
+            <input type="text" name="subject" placeholder="Internship opportunity / project discussion" required />
           </label>
 
           <label>
             <span>Message</span>
-            <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+            <textarea name="message" rows="6" placeholder="Tell me about the role, project, or opportunity." required></textarea>
           </label>
 
-          <button class="button button-primary" type="submit">Send Message</button>
+          <button class="button button-primary" type="submit">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m3 11 18-8-6 18-2-7-7-3Z" />
+            </svg>
+            Send Message
+          </button>
           <p class="form-status" role="status" aria-live="polite" data-form-status></p>
         </form>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© <span data-year></span> Sitanshu Singh. All rights reserved.</p>
+      <p>© <span data-year></span> Sitanshu Singh</p>
+      <a href="#home">Back to top</a>
     </footer>
 
     <script src="script.js"></script>
