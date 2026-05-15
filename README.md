@@ -23,7 +23,7 @@ I am Sitanshu Singh, a Computer Science and Data Analytics undergraduate at IIT 
 - Embedded downloadable resume PDF
 - Contact form that opens a prepared email draft.
 - Light and dark theme support
-- GitHub Pages-ready static deployment
+- GitHub Pages ready static deployment
 
 ## Project Structure
 
