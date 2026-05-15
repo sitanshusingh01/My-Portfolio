@@ -21,7 +21,7 @@ I am Sitanshu Singh, a Computer Science and Data Analytics undergraduate at IIT 
 - Project cards with problem, approach, impact, live links, and GitHub links
 - ATS-friendly skills and experience sections
 - Embedded downloadable resume PDF
-- Contact form that opens a prepared email draft
+- Contact form that opens a prepared email draft.
 - Light and dark theme support
 - GitHub Pages-ready static deployment
 
