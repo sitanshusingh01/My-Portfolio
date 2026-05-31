@@ -1,19 +1,4 @@
-:root {
-  --bg: #f6f8fb;
-  --surface: rgba(255, 255, 255, 0.82);
-  --surface-solid: #ffffff;
-  --surface-soft: #eef4f8;
-  --text: #112033;
-  --muted: #617084;
-  --line: rgba(17, 32, 51, 0.12);
-  --accent: #1f5eff;
-  --accent-strong: #1748bd;
-  --teal: #0d8f8c;
-  --gold: #d89b21;
-  --coral: #e56353;
-  --shadow: 0 22px 64px rgba(17, 32, 51, 0.11);
-  color-scheme: light;
-}
+
 
 :root[data-theme="dark"] {
   --bg: #0b1220;
