@@ -1,5 +1,6 @@
 # Sitanshu Singh Portfolio
 
+A clean, responsive portfolio for Data Analyst and Business Analyst opportunities. The site presents my background, skills, experience, projects, resume, and contact details in one recruiter-friendly place.
 
 
 Live website: [https://sitanshusingh01.github.io/My-Portfolio/](https://sitanshusingh01.github.io/My-Portfolio/)
