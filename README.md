@@ -9,7 +9,7 @@ Live website: [https://sitanshusingh01.github.io/My-Portfolio/](https://sitanshu
 
 I am Sitanshu Singh, a Computer Science and Data Analytics undergraduate at IIT Patna. My work focuses on data cleaning, exploratory analysis, SQL reporting, KPI dashboards, and business insight communication using Python, SQL, Excel, and Power BI.
 
-##Tech Stack
+Tech Stack
 
 - HTML
 - CSS
