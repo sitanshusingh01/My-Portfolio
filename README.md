@@ -26,7 +26,7 @@ I am Sitanshu Singh, a Computer Science and Data Analytics undergraduate at IIT 
 - Light and dark theme support
 - GitHub Pages ready static deployment
 
-## Project Structure
+Project Structure
 
 ```text
 .
