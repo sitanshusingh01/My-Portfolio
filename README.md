@@ -12,7 +12,7 @@ I am Sitanshu Singh, a Computer Science and Data Analytics undergraduate at IIT 
 ##Tech Stack
 
 - HTML
- CSS
+ -CSS
 - JavaScript
 
 ## Features
