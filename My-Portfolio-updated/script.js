@@ -130,7 +130,7 @@ form?.addEventListener("submit", (event) => {
   const mailSubject = encodeURIComponent(subject);
   const mailBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
 
-  window.location.href = `mailto:sitanshu_2312res644@iitp.ac.in?subject=${mailSubject}&body=${mailBody}`;
+  window.location.href = `mailto:official.sitanshu369@gmail.com?subject=${mailSubject}&body=${mailBody}`;
 
   if (formStatus) {
     formStatus.textContent = "Opening your email app with the drafted message.";

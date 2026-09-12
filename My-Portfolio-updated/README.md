@@ -1,6 +1,6 @@
 # Sitanshu Singh Portfolio
 
-A clean, responsive portfolio for Data Analyst and Business Analyst opportunities. The site presents my background, skills, experience, projects, resume, and contact details in one recruiter-friendly place.
+A clean, responsive portfolio built for Data Analyst and Business Analyst roles. It covers my background, skills, experience, projects, resume, and contact details in one place.
 
 
 Live website: [https://sitanshusingh01.github.io/My-Portfolio/](https://sitanshusingh01.github.io/My-Portfolio/)
@@ -17,10 +17,10 @@ I am Sitanshu Singh, a Computer Science and Data Analytics undergraduate at IIT 
 
 ## Features
 
-- Recruiter-focused hero section with clear analyst positioning
+- Hero section with clear analyst positioning
 - Responsive layout for desktop, tablet, and mobile screens
 - Project cards with problem, approach, impact, live links, and GitHub links
-- ATS-friendly skills and experience sections
+- ATS friendly skills and experience sections
 - Embedded downloadable resume PDF
 - Contact form that opens a prepared email draft.
 - Light and dark theme support
@@ -82,7 +82,7 @@ assets/screenshots/resume-section.png
 
 ## Contact
 
-- Email: [sitanshu_2312res644@iitp.ac.in](mailto:sitanshu_2312res644@iitp.ac.in)
+- Email: [official.sitanshu369@gmail.com](mailto:official.sitanshu369@gmail.com)
 - GitHub: [https://github.com/sitanshusingh01](https://github.com/sitanshusingh01)
 - LinkedIn: [https://linkedin.com/in/sitanshusingh01](https://linkedin.com/in/sitanshusingh01)
 - Portfolio: [https://sitanshusingh01.github.io/My-Portfolio/](https://sitanshusingh01.github.io/My-Portfolio/)
