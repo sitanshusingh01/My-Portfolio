@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sitanshu Singh is an IIT Patna data analytics undergraduate focused on SQL, Power BI dashboards, KPI reporting, and business insights for analyst roles."
+    />
+    <meta name="author" content="Sitanshu Singh" />
+    <title>Sitanshu Singh | Data Analyst Portfolio</title>
+    <link rel="preload" as="image" href="assets/portfolio-workspace.png" />
+    <script>
+      try {
+        const savedTheme = localStorage.getItem("portfolio-theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? "dark" : "light");
+      } catch {
+        document.documentElement.dataset.theme = "light";
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Sitanshu Singh home">
+        <span class="brand-mark" aria-hidden="true">SS</span>
+        <span class="brand-text">
+          <strong>Sitanshu Singh</strong>
+          <small>Data Analyst Portfolio</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation" data-nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" title="Toggle color theme" aria-label="Toggle color theme" data-theme-toggle>
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" />
+            <circle cx="12" cy="12" r="4.2" />
+          </svg>
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 15.1A8.5 8.5 0 0 1 8.9 4 7.8 7.8 0 1 0 20 15.1Z" />
+          </svg>
+        </button>
+
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Data Analyst | Business Analyst</p>
+          <h1 id="hero-title">I turn data into decisions people can act on.</h1>
+          <p class="hero-role">Sitanshu Singh, BS in Computer Science and Data Analytics at IIT Patna</p>
+          <p class="hero-summary">
+            I'm a Computer Science and Data Analytics student who works with SQL, Python, Excel, and Power BI. I clean and validate datasets, build KPI dashboards, and turn the results into insights that stakeholders can actually use.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14m-6-6 6 6-6 6" />
+              </svg>
+              View Projects
+            </a>
+            <a class="button button-secondary" href="assets/Sitanshu_Singh_IITP.pdf" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14" />
+              </svg>
+              Download Resume
+            </a>
+          </div>
+
+          <ul class="hero-metrics" aria-label="Professional highlights">
+            <li>
+              <strong>9.00</strong>
+              <span>SPI at IIT Patna</span>
+            </li>
+            <li>
+              <strong>3</strong>
+              <span>Data analytics internships across research and industry</span>
+            </li>
+            <li>
+              <strong>5+</strong>
+              <span>Dashboard, SQL, and analytics projects</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-stage reveal" aria-label="Analytics workspace preview">
+          <div class="stage-card stage-card-large">
+            <div class="stage-card-header" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="chart-grid">
+              <div class="bar-set" aria-hidden="true">
+                <i style="height: 46%"></i>
+                <i style="height: 62%"></i>
+                <i style="height: 54%"></i>
+                <i style="height: 78%"></i>
+                <i style="height: 90%"></i>
+              </div>
+              <div class="line-set" aria-hidden="true">
+                <svg viewBox="0 0 260 130" preserveAspectRatio="none">
+                  <polyline points="16,92 68,58 122,66 176,34 236,48" />
+                  <circle cx="16" cy="92" r="4" />
+                  <circle cx="68" cy="58" r="4" />
+                  <circle cx="122" cy="66" r="4" />
+                  <circle cx="176" cy="34" r="4" />
+                  <circle cx="236" cy="48" r="4" />
+                </svg>
+              </div>
+            </div>
+            <div class="stage-card-footer">
+              <span>KPI Reporting</span>
+              <span>EDA</span>
+              <span>Business Insights</span>
+            </div>
+          </div>
+
+          <div class="stage-card stage-card-photo">
+            <img src="assets/portfolio-workspace.png" alt="Desk setup used for dashboard and analytics work" />
+          </div>
+
+          <div class="stage-float stage-float-top">
+            <span>Core stack</span>
+            <strong>SQL, Python, Excel, Power BI</strong>
+          </div>
+
+          <div class="stage-float stage-float-bottom">
+            <span>Current focus</span>
+            <strong>Data Analyst and Business Analyst opportunities</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell" id="about" aria-labelledby="about-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">Analytical thinking with a business lens.</h2>
+          <p>
+            I'm pursuing Computer Science and Data Analytics at IIT Patna. My work spans data cleaning, exploratory analysis, dashboard development, and reporting, across computer vision datasets, environmental and geospatial data, and industrial sensor data. I care about getting the whole pipeline right, from raw data to a recommendation someone can actually use.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card reveal">
+            <h3>How I Work</h3>
+            <p>
+              I start by figuring out the actual question and the KPIs that matter, then validate the data before touching the analysis. That way the output holds up and is genuinely useful to whoever asked for it.
+            </p>
+          </article>
+
+          <article class="about-card reveal">
+            <h3>Education</h3>
+            <p>
+              <strong>Indian Institute of Technology Patna</strong><br />
+              BS in Computer Science and Data Analytics<br />
+              2023 - 2027<br />
+              SPI: 9.00 / 10<br />
+              Coursework: Data Structures and Algorithms, DBMS, Operating Systems, OOP, Machine Learning, Probability and Statistics, Linear Algebra, Discrete Mathematics
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell what-i-bring" aria-labelledby="bring-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">What I Bring</p>
+          <h2 id="bring-title">Strong analysis, clean reporting, and clear communication.</h2>
+        </div>
+
+        <div class="bring-grid">
+          <article class="bring-card reveal">
+            <h3>Business Insight</h3>
+            <p>I connect the numbers to what actually matters to a business, like revenue, retention, customer behavior, and operational efficiency, instead of building charts for their own sake.</p>
+          </article>
+          <article class="bring-card reveal">
+            <h3>Structured Analysis</h3>
+            <p>I validate data with SQL, Python, Excel, and basic statistics before drawing any conclusions from it, so the results hold up under scrutiny.</p>
+          </article>
+          <article class="bring-card reveal">
+            <h3>Clear Communication</h3>
+            <p>I turn findings into dashboards and short reports that get to the point, so people can act on them without digging through the details.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Skills</p>
+          <h2 id="skills-title">Analyst toolkit built around business questions.</h2>
+          <p>A skill set spanning programming, data analytics, BI and visualization, computer vision tooling, and large language model workflows.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-heading">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 7 4 12l4 5M16 7l4 5-4 5M13 4l-2 16" />
+              </svg>
+              <div>
+                <h3>Programming</h3>
+                <p>Java, Python (Pandas, NumPy, Matplotlib, Seaborn), SQL</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-heading">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 20v-8M8 20v-4M16 20V9M4 20h16M7 7l3 3 7-7" />
+              </svg>
+              <div>
+                <h3>Data Structures and Algorithms</h3>
+                <p>Arrays, strings, sorting, searching, hash maps, stacks, and queues</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-heading">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 19h16M7 16V9M12 16V5M17 16v-7" />
+              </svg>
+              <div>
+                <h3>Data Analytics</h3>
+                <p>Data Cleaning, Data Wrangling, Exploratory Data Analysis, Statistical Analysis, Data Processing, Data Quality Validation, Geospatial Data Validation</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-heading">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 18h16M6 16V8M12 16V5M18 16v-6" />
+              </svg>
+              <div>
+                <h3>BI and Visualization</h3>
+                <p>Power BI, Advanced Excel, Dashboard Development, Data Visualization, Reporting, KPI Tracking</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-heading">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6Z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+              <div>
+                <h3>Specialized Tools</h3>
+                <p>Roboflow, COCO JSON, Google Earth Engine</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-heading">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 19a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h4l2 2h6a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6Z" />
+              </svg>
+              <div>
+                <h3>Databases</h3>
+                <p>MySQL</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-heading">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3l1.8 4.8L18.6 9l-4.8 1.8L12 15.6l-1.8-4.8L5.4 9l4.8-1.8L12 3Z" />
+                <path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15Z" />
+              </svg>
+              <div>
+                <h3>LLM Tooling</h3>
+                <p>LLMs, Prompt Engineering, RAG, LangChain, OpenAI API</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-heading">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 7h16M4 12h16M4 17h10" />
+              </svg>
+              <div>
+                <h3>Version Control</h3>
+                <p>Git, GitHub</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Experience</p>
+          <h2 id="experience-title">Experience across research, analytics, and operations.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-date">Jun 2026 - Aug 2026</span>
+            <div class="timeline-content">
+              <h3>Data Analytics Research Intern</h3>
+              <p class="timeline-location">NIT Srinagar, Srinagar, India (On site)</p>
+              <ul>
+                <li>Prepared and validated 2,500+ field images and 14,300+ annotated waste instances for the Dal Lake Plastic Waste Detection project, using Python for data cleaning ahead of computer vision model development.</li>
+                <li>Ran exploratory data analysis on annotation data in Python (Pandas, Matplotlib, Seaborn) to identify class distribution, object density, and consistency issues across 6 plastic waste categories.</li>
+                <li>Designed Power BI dashboards with 15+ KPIs to track annotation progress and dataset composition, and automated analysis of COCO JSON files to support dataset validation.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-date">May 2026 - Jul 2026</span>
+            <div class="timeline-content">
+              <h3>Data Analyst Intern</h3>
+              <p class="timeline-location">Buddiz AI, UAE (Remote)</p>
+              <ul>
+                <li>Investigated environmental datasets from Sentinel-2, MODIS, and ground observations for the UAE Carbon Sequestration Mapping project, estimating carbon storage across UAE mangrove ecosystems.</li>
+                <li>Processed, cleaned, and standardized 50,000+ environmental data records in Python (Pandas, NumPy), resolving missing values to prepare analytical layers for downstream analysis.</li>
+                <li>Created Power BI dashboards with 20+ KPIs to monitor carbon estimation metrics and vegetation health, producing 15+ supporting visualizations in Matplotlib and Seaborn.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-date">Jan 2026 - Apr 2026</span>
+            <div class="timeline-content">
+              <h3>Data Analytics Intern</h3>
+              <p class="timeline-location">IIT Bhilai, Bhilai, India (On site)</p>
+              <ul>
+                <li>Cleaned 100,000+ sensor records and annotated 2,500+ industrial images for YOLOv8 model development, using Python (Pandas, NumPy) to prepare high quality datasets for predictive maintenance in steel manufacturing operations.</li>
+                <li>Conducted EDA to identify the most fluctuating sensors, using Matplotlib and Seaborn to surface trends and anomalies across 15+ visualizations.</li>
+                <li>Developed Power BI dashboards with 15+ KPIs to monitor sensor behavior and equipment performance, and automated data validation workflows to cut manual preprocessing effort.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">Projects framed by problem, approach, and impact.</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-index">01</span>
+              <span class="project-label">Operations Analytics</span>
+            </div>
+            <h3>Delivery Performance Analysis for a Multi Zone Food Platform</h3>
+            <p>
+              <strong>Problem:</strong> Delivery performance data across zones, shifts, and riders is hard to read at a glance, so it is easy to miss where late deliveries are actually piling up.
+            </p>
+            <p>
+              <strong>Approach:</strong> Analyzed close to 50,000 simulated delivery records with Python and Power BI, building drill downs by zone, time of day, and rider.
+            </p>
+            <p>
+              <strong>Impact:</strong> Found that two zones accounted for a disproportionate share of late evening deliveries and recommended shifting rider allocation to those windows.
+            </p>
+            <div class="chip-row" aria-label="Food delivery project tools">
+              <span>Python</span>
+              <span>Excel</span>
+              <span>Power BI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://sitanshusingh01.github.io/food-delivery-analytics/" target="_blank" rel="noreferrer noopener">Live Website</a>
+              <a href="https://github.com/sitanshusingh01/food-delivery-analytics" target="_blank" rel="noreferrer noopener">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-index">02</span>
+              <span class="project-label">Sales Analytics</span>
+            </div>
+            <h3>Customer and Sales Analysis for an Online Retailer</h3>
+            <p>
+              <strong>Problem:</strong> The category and pricing team needed to know which customer segments actually responded to discounts, based on real purchasing behavior.
+            </p>
+            <p>
+              <strong>Approach:</strong> Used SQL joins and window functions across roughly 20,000 transaction records to build customer summaries, then segmented customers in Python by spend and frequency.
+            </p>
+            <p>
+              <strong>Impact:</strong> Built a Power BI and Excel view for the category and pricing team, highlighting which customer segments were most sensitive to discounting.
+            </p>
+            <div class="chip-row" aria-label="E-commerce project tools">
+              <span>Python</span>
+              <span>SQL</span>
+              <span>Power BI</span>
+              <span>Excel</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sitanshusingh01/E-commerce-Store-Analysis" target="_blank" rel="noreferrer noopener">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-index">03</span>
+              <span class="project-label">Portfolio Product</span>
+            </div>
+            <h3>Personal Portfolio Website</h3>
+            <p>
+              <strong>Problem:</strong> Recruiters should not have to hunt across separate links to see my skills, projects, and resume in one place.
+            </p>
+            <p>
+              <strong>Approach:</strong> Built a responsive static site with clear sections for skills, project write ups, resume access, and a working contact form.
+            </p>
+            <p>
+              <strong>Impact:</strong> Gives recruiters a single link that covers everything they need to evaluate me for Data Analyst and Business Analyst roles.
+            </p>
+            <div class="chip-row" aria-label="Portfolio project tools">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>GitHub Pages</span>
+            </div>
+            <div class="project-links">
+              <a href="https://sitanshusingh01.github.io/My-Portfolio/" target="_blank" rel="noreferrer noopener">Live Website</a>
+              <a href="https://github.com/sitanshusingh01/My-Portfolio" target="_blank" rel="noreferrer noopener">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell" id="credentials" aria-labelledby="credentials-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Credentials</p>
+          <h2 id="credentials-title">Certifications, achievements, and resume.</h2>
+        </div>
+
+        <div class="credentials-grid">
+          <article class="credential-panel reveal">
+            <h3>Certifications</h3>
+            <ul class="stack-list">
+              <li><a href="https://coursera.org/verify/professional-cert/0XSA7WM47CEO" target="_blank" rel="noreferrer noopener">Microsoft Excel</a> (Microsoft, Coursera): Excel formulas, PivotTables, XLOOKUP, and data cleaning with Copilot</li>
+              <li><a href="https://coursera.org/verify/XAYVPMCLH6ML" target="_blank" rel="noreferrer noopener">Database Structures and Management with MySQL</a> (Meta, Coursera): relational database design, primary and foreign keys, and MySQL stored procedures</li>
+              <li><a href="https://www.coursera.org/account/accomplishments/records/8MXFMJUL5P8E" target="_blank" rel="noreferrer noopener">Data Analysis with Python</a> (IBM, Coursera): data wrangling, exploratory data analysis, and regression modeling with Pandas, NumPy, and Scikit-learn</li>
+            </ul>
+          </article>
+
+          <article class="credential-panel reveal">
+            <h3>Achievements and Leadership</h3>
+            <ul class="stack-list">
+              <li>Solved 274+ problems on LeetCode (102 Easy, 126 Medium, 46 Hard) with a 60 day max streak</li>
+              <li>Received a Letter of Recommendation from Dr. Veningston K, Assistant Professor, Department of CSE, NIT Srinagar, for his work on the Dal Lake Plastic Waste Detection internship</li>
+              <li>Selected for McKinsey Solve Assessment</li>
+              <li>Media and PR Coordinator, TEDx IIT Patna</li>
+              <li>NSS Coordinator for operations and events</li>
+            </ul>
+          </article>
+
+          <article class="credential-panel credential-panel-wide reveal">
+            <div class="credential-topline">
+              <div>
+                <h3>Resume</h3>
+                <p>One page ATS optimized resume aligned with this portfolio and targeted toward Data Analyst and Business Analyst roles.</p>
+              </div>
+              <div class="resume-actions">
+                <a class="button button-primary" href="assets/Sitanshu_Singh_IITP.pdf" download>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14" />
+                  </svg>
+                  Download Resume
+                </a>
+                <a class="button button-secondary" href="assets/Sitanshu_Singh_IITP.pdf" target="_blank" rel="noreferrer noopener">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M14 5h5v5M10 14 19 5M19 14v5H5V5h5" />
+                  </svg>
+                  Open PDF
+                </a>
+              </div>
+            </div>
+
+            <iframe class="resume-frame" title="Sitanshu Singh resume PDF" src="assets/Sitanshu_Singh_IITP.pdf"></iframe>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Open to Data Analyst and Business Analyst opportunities.</h2>
+          <p>
+            I'm looking for internships and entry level analyst roles, especially ones involving dashboards and business reporting where clear communication actually matters.
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <strong>Email</strong>
+              <a href="mailto:official.sitanshu369@gmail.com">official.sitanshu369@gmail.com</a>
+            </li>
+            <li>
+              <strong>Phone</strong>
+              <a href="tel:+918115926935">+91 8115926935</a>
+            </li>
+            <li>
+              <strong>Portfolio</strong>
+              <a href="https://sitanshusingh01.github.io/My-Portfolio/" target="_blank" rel="noreferrer noopener">sitanshusingh01.github.io/My-Portfolio</a>
+            </li>
+          </ul>
+
+          <div class="social-row">
+            <a class="social-link" href="https://github.com/sitanshusingh01" target="_blank" rel="noreferrer noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-2c-2.9.7-3.5-1.2-3.5-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 0 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1 .6-1.3-2.3-.3-4.7-1.1-4.7-5 0-1.1.4-2 1.1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .9-.3 2.8 1a9.9 9.9 0 0 1 5.2 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.7.7 1.1 1.6 1.1 2.7 0 3.9-2.4 4.7-4.8 5 .4.3.7.9.7 1.8v2.6c0 .3.2.6.7.5A10 10 0 0 0 12 2Z" />
+              </svg>
+              GitHub
+            </a>
+            <a class="social-link" href="https://linkedin.com/in/sitanshusingh01" target="_blank" rel="noreferrer noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6.8 8.8V20H3.6V8.8h3.2ZM5.2 4a1.9 1.9 0 1 1 0 3.8 1.9 1.9 0 0 1 0-3.8Zm6.2 4.8v1.5c.7-1.1 1.9-1.8 3.4-1.8 2.6 0 4.4 1.7 4.4 5.1V20H16v-5.9c0-1.5-.5-2.5-1.9-2.5-1 0-1.7.6-2 1.4V20H8.9V8.8h2.5Z" />
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" data-contact-form>
+          <div class="field-grid">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" autocomplete="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+            </label>
+          </div>
+
+          <label>
+            <span>Subject</span>
+            <input type="text" name="subject" placeholder="Analyst role / dashboard project" required />
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="6" placeholder="Share the role, project, or opportunity." required></textarea>
+          </label>
+
+          <button class="button button-primary" type="submit" aria-label="Send message">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m3 11 18-8-6 18-2-7-7-3Z" />
+            </svg>
+            Send Message
+          </button>
+          <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span data-year></span> Sitanshu Singh</p>
+      <a href="#home">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
