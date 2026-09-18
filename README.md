@@ -9,17 +9,17 @@ Live website: [https://sitanshusingh01.github.io/My-Portfolio/](https://sitanshu
 
 I am Sitanshu Singh, a Computer Science and Data Analytics undergraduate at IIT Patna. My work focuses on data cleaning, exploratory analysis, SQL reporting, KPI dashboards, and business insight communication using Python, SQL, Excel, and Power BI.
 
-##Tech Stack
+## Tech Stack
 
 - HTML
- -CSS
+- CSS
 - JavaScript
 
 ## Features
 
 - Hero section with clear analyst positioning
 - Responsive layout for desktop, tablet, and mobile screens
-- Project cards with problem, approach, impact, live links, and GitHub links
+- Project cards with problem, approach, impact, live links, GitHub links, and a screenshot gallery
 - ATS friendly skills and experience sections
 - Embedded downloadable resume PDF
 - Contact form that opens a prepared email draft.
@@ -37,7 +37,11 @@ I am Sitanshu Singh, a Computer Science and Data Analytics undergraduate at IIT 
 ├── .nojekyll
 └── assets
     ├── Sitanshu_Singh_IITP.pdf
-    └── portfolio-workspace.png
+    ├── avatar.jpg
+    ├── portfolio-workspace.png
+    └── screenshots
+        ├── food-delivery
+        └── plasticnet
 ```
 
 ## Run Locally
@@ -72,13 +76,7 @@ https://sitanshusingh01.github.io/My-Portfolio/
 
 ## Screenshots
 
-Add screenshots after major visual updates.
-
-```text
-assets/screenshots/home-desktop.png
-assets/screenshots/projects-mobile.png
-assets/screenshots/resume-section.png
-```
+Project screenshots live under `assets/screenshots/`, grouped by project (`food-delivery/`, `plasticnet/`), with a full size and a thumbnail version of each image. They're wired into the "Screenshots" button on each project card, which opens a lightweight in-page lightbox (see `openLightbox` in `script.js`).
 
 ## Contact
 
